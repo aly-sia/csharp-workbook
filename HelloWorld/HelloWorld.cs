@@ -6,18 +6,17 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            int [] numbers = {23, 7, 4, 3,11,8,9, 49};
+        string name = "";
+        string firstInt = 0;
+        string secondInt = 0;
 
-            if(numbers.Length ==0 ) {
-                Console.WriteLine("Your list is empty");
-            } else {
-                int largest = numbers[0];
-                for(int i=1;i<numbers.Length;i++){
-                    
-                }
-
-            }
-            }
+         Console.WriteLine("Please enter a number to add");
+         firstInt = "Console.ReadLine()";
+         Console.WriteLine("Please enter a second number to add");
+         secondInt = "Console.ReadLine()";
+         sum = "X + Y";
+         Console.WriteLine(sum);
         }
     }
+}
 
