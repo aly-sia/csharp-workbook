@@ -6,11 +6,11 @@ namespace RockPaperScissors
     {
         public static void Main()
         {
+
             Console.WriteLine("Enter hand 1:");
             string hand1 = Console.ReadLine().ToLower();
-            Console.WriteLine("Enter hand 2:");
-            string hand2 = Console.ReadLine().ToLower();
-            Console.WriteLine(CompareHands(hand1, hand2));
+            Random random = new Random();
+            int randomNumber = random.Next(0,3);
 
             // leave this command at the end so your program does not close automatically
             Console.ReadLine();
@@ -18,8 +18,41 @@ namespace RockPaperScissors
         
         public static string CompareHands(string hand1, string hand2)
         {
-            // Your code here
-            return hand1 + ' ' + hand2;
+            if (hand1 == hand2)
+            { 
+                return "It's a tie!";
+            }
+            if (hand1 == "0")
+            {
+                if (hand2 == "3");
+            {
+            return "Hand one wins!";
+            }
+            return "Hand two wins!";
+            }
+
+            if (hand1 == "2")
+            {
+                if (hand1 == "1");
+            {
+            return "Hand one wins";
+            }
+            if (hand2 == "3");
+            {
+            return "Hand two wins";
+            }
+
+            if (hand1 == "3")
+            {
+                if (hand2 == "2");
+            {
+            return "Hand one wins!";
+            }
+            return "Hand two wins!";
+            }
+        }
+                
+          Console.ReadLine();     
         }
     }
 }
