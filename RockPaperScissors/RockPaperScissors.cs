@@ -20,35 +20,35 @@ namespace RockPaperScissors
         {
             if (hand1 == hand2)
             { 
-                return "It's a tie!";
+                Console.WriteLine("It's a tie!");
             }
-            if (hand1 == "0")
+            if (hand1 == "rock")
             {
-                if (hand2 == "3");
+                if (hand2 == "scissors");
             {
-            return "Hand one wins!";
+            Console.WriteLine( "Hand one wins!");
             }
-            return "Hand two wins!";
-            }
-
-            if (hand1 == "2")
-            {
-                if (hand1 == "1");
-            {
-            return "Hand one wins";
-            }
-            if (hand2 == "3");
-            {
-            return "Hand two wins";
+            Console.WriteLine("Hand two wins!");
             }
 
-            if (hand1 == "3")
+            if (hand1 == "paper")
             {
-                if (hand2 == "2");
+                if (hand1 == "rock");
             {
-            return "Hand one wins!";
+            Console.WriteLine("Hand one wins");
             }
-            return "Hand two wins!";
+            if (hand2 == "scissors");
+            {
+            Console.WriteLine("Hand two wins");
+            }
+
+            if (hand1 == "scissors")
+            {
+                if (hand2 == "paper");
+            {
+            Console.WriteLine("Hand one wins!");
+            }
+            Console.WriteLine("Hand two wins!");
             }
         }
                 
